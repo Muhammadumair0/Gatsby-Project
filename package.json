@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "^9.4.0"
-  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
-    "start": "serve public/",
+    "serve": "gatsby serve",  
+    "start": "serve public/",  
     "gh-pages": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "node_modules/.bin/eslint src --fix",
     "dev": "(shx --silent rm -rf public || shx true) && gatsby develop",
-    "server": "cross-env NODE_ENV=development DEBUG=api nodemon server.js"
+    "server": "cross-env NODE_ENV=development DEBUG=api nodemon server.js",
+    "heroku-postbuild": "gatsby build"
   },
   "author": "Prototype Interactive",
   "license": "MIT",
@@ -24,8 +22,8 @@
     "debug": "^3.1.0",
     "express": "^4.16.2",
     "helmet": "^3.8.2",
-    "serve-static": "^1.13.1",
-    
+    "serve": "^6.4.11",
+    "serve-static": "^1.13.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
@@ -50,3 +48,4 @@
     "svg-sprite-loader": "^3.4.1"
   }
 }
+
