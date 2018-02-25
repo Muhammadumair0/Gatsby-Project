@@ -10,7 +10,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "start": "node server.js",
+    "start": "serve public/",
     "gh-pages": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "node_modules/.bin/eslint src --fix",
     "dev": "(shx --silent rm -rf public || shx true) && gatsby develop",
