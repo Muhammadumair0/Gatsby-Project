@@ -31,5 +31,5 @@
 
 * **RTL**: The usual method of generating different css file for RTL pages (as seen in static-html-boilerplate) will not work out of the box here since Gatsby pulls all the css together, this means the RTL css will override the LTR one.
 
-### Website URl
+### Website URL
 * https://mystifying-cori-3ff119.netlify.com/
