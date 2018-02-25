@@ -1,36 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
-import Header from '../components/Header'
-import './index.scss'
+import '../../sass/style.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Grocier Star"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
+      title="Gatsby React Boilerplate"
     />
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-       
-      }}
-    >
-      {children()}
-    </div>
+    {children()}
+    <Footer />
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

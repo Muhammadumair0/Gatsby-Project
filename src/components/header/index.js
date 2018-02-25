@@ -9,15 +9,15 @@ const Header = () =>
         <div className="col-12">
           <div className="header-content">
             <span className="header-logo">
-              Gatsby React Boilerplate
+              Groceri Star
             </span>
             <nav className="header-nav">
               <ul className="header-nav-list">
                 <li className="header-nav-list-item">
-                  <a href="#features">Features</a>
+                  <a href="#features">About</a>
                 </li>
                 <li className="header-nav-list-item">
-                  <a href="#howto">How To</a>
+                  <a href="#howto">Login To Groceri Star</a>
                 </li>
               </ul>
             </nav>

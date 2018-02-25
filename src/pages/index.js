@@ -3,23 +3,12 @@
 import React from 'react';
 import Features from '../components/features';
 import HowTo from '../components/how-to';
-import Link from 'gatsby-link';
 
 const IndexPage = props =>
-  (
- <div style={{
-    color:"black"
-}}>
-    <h1>Hi people</h1>
-    <p>Welcome to your Grocier Star.</p>
-    <p>Build something great.</p>
-    <Link to="/next/" style={{
-      textDecoration:"none",
-      textColor:"orage"
-      ,
-    }}>Route to next page</Link>
-  </div>
-  );
+  (<main>
+    <Features data={props.data.allDataJson.edges[0].node.features} />
+    <HowTo data={props.data.allDataJson.edges[0].node.howTo} />
+  </main>);
 
 export default IndexPage;
 
